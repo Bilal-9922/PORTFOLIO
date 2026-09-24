@@ -606,3 +606,19 @@ footer {
   flex-direction: column;
 }
 }
+
+
+/* Profile Photo Size */
+.profile-orbit {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.profile-orbit img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
