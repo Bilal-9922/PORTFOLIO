@@ -282,57 +282,44 @@ h2 span {
 /* =========================
    PROFILE PHOTO
 ========================= */
+/* =========================
+   PROFILE PHOTO
+========================= */
 
-/* Circular profile container */
 .profile-orbit {
   width: 230px;
   height: 230px;
-  border: 2px solid rgba(185,255,102,.65);
+
+  border: 2px solid rgba(185, 255, 102, 0.65);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto auto;
-  position: relative;
+
   overflow: hidden;
+
+  position: relative;
   flex-shrink: 0;
+
+  margin: 0 auto 30px;
+
+  display: block;
+
   box-shadow:
-    0 0 0 1px rgba(185,255,102,.15),
-    0 0 30px rgba(185,255,102,.08);
+    0 0 0 1px rgba(185, 255, 102, 0.15),
+    0 0 30px rgba(185, 255, 102, 0.08);
 }
 
 .profile-photo {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
+
+  /* Adjust this if face position needs changing */
   object-position: center 20%;
+
   border-radius: 50%;
 }
-
-
-/* 
-   If the photo is directly inside .hero-card
-   instead of inside .profile-orbit,
-   this keeps it small.
-*/
-.hero-card > .profile-photo,
-.hero-card > img {
-  width: 180px;
-  height: 220px;
-
-  object-fit: cover;
-
-  object-position: center 18%;
-
-  display: block;
-
-  margin: 0 auto 25px;
-
-  border-radius: 18px;
-}
-
-
 /* =========================
    HERO CARD CONTENT
 ========================= */
@@ -1132,14 +1119,15 @@ footer {
   }
 
   /* Smaller photo on mobile */
-  .hero-card > .profile-photo,
-  .hero-card > img {
-    width: 150px;
-    height: 190px;
-  }
-
   .profile-orbit {
-    width: 160px;
-    height: 160px;
-  }
+  width: 190px;
+  height: 190px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
 }
