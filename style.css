@@ -285,45 +285,29 @@ h2 span {
 
 /* Circular profile container */
 .profile-orbit {
-  width: 180px;
-  height: 180px;
-
-  border: 1px solid rgba(185,255,102,.4);
-
+  width: 230px;
+  height: 230px;
+  border: 2px solid rgba(185,255,102,.65);
   border-radius: 50%;
-
-  display: grid;
-  place-items: center;
-
-  margin-bottom: auto;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto auto;
   position: relative;
-
   overflow: hidden;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 0 1px rgba(185,255,102,.15),
+    0 0 30px rgba(185,255,102,.08);
 }
 
-/* Outer decorative rings */
-.profile-orbit::before,
-.profile-orbit::after {
-  content: "";
-
-  position: absolute;
-
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 20%;
   border-radius: 50%;
-
-  border: 1px dashed rgba(185,255,102,.22);
-
-  pointer-events: none;
-
-  z-index: 2;
-}
-
-.profile-orbit::before {
-  inset: 18px;
-}
-
-.profile-orbit::after {
-  inset: 38px;
 }
 
 /* Photo INSIDE circular profile */
