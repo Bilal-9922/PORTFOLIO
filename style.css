@@ -690,13 +690,14 @@ h2 span {
 
 .project-links a {
   display: inline-flex;
-  align-items: center;
-  padding: 9px 14px;
+  margin-top: 24px;
+  padding: 10px 16px;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--accent);
-  font-size: .7rem;
+  font-size: .75rem;
   font-weight: 700;
+  text-decoration: none;
   transition: .25s;
 }
 
